@@ -74,8 +74,12 @@ const Navbar: FC<NavbarProps> = (props) => {
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
             {/* ===================== home nav item ===================== */}
-            <li className="nav-item dropdown dropdown-mega">
+            <li className="nav-item">
               <NextLink href="/" title="Home" className="nav-link" />
+            </li>
+            {/* ===================== contact nav item ===================== */}
+            <li className="nav-item">
+              <NextLink href="/contact" title="Contact" className="nav-link" />
             </li>
           </ul>
 

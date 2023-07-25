@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Hero17 } from 'components/blocks/hero';
 import { Navbar } from 'components/blocks/navbar';
-import { Contact10 } from 'components/blocks/contact';
+import { Reel } from 'components/blocks/reel';
 import PageProgress from 'components/common/PageProgress';
 
 const Home: NextPage = () => {
@@ -25,14 +25,14 @@ const Home: NextPage = () => {
           <div className="container">
             <div className="card shadow-none">
               <div className="card-body px-lg-11 px-xl-13">
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Reel />
+              </div>
               </div>
             </div>
           </div>
         </section>
       </main>
-
-      {/* ========== footer section ========== */}
-      <Contact10 />
     </Fragment>
   );
 };

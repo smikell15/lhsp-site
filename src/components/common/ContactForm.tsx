@@ -1,8 +1,39 @@
 import { FC } from 'react';
 
+const handleSubmit = async (e: any) => {
+  e.preventDefault();
+
+  const email =  e.target.form_email.value;
+  const firstName = e.target.form_name.value;
+  const lastName = e.target.form_lastname.value;
+  const subject = e.target.form_subject.value;
+  const message = e.target.form_message.value;
+
+  const res = await fetch("/api/sendgrid", {
+    body: JSON.stringify({
+      email: email,
+      firstName: firstName,
+      lastName: lastName,
+      subject: subject,
+      message: message,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+    method: "POST",
+  });
+
+  const { error } = await res.json();
+  if (error) {
+    console.log(error);
+    return;
+  }
+console.log(firstName, lastName, email, subject, message);
+}
+
 const ContactForm: FC = () => {
   return (
-    <form className="contact-form needs-validation" method="post">
+    <form className="contact-form needs-validation" method="post" onSubmit={handleSubmit}>
       <div className="messages"></div>
       <div className="row gx-4">
         <div className="col-md-6">
@@ -40,18 +71,11 @@ const ContactForm: FC = () => {
         </div>
 
         <div className="col-md-6">
-          <div className="form-select-wrapper mb-4">
-            <select className="form-select" id="form-select" name="department" required>
-              <option disabled value="">
-                Select a department
-              </option>
-              <option value="Sales">Sales</option>
-              <option value="Marketing">Marketing</option>
-              <option value="Customer Support">Customer Support</option>
-            </select>
-
+          <div className="form-floating mb-4">
+            <input required type="text" name="subject" placeholder="I would like to dance!" id="form_subject" className="form-control" />
+            <label htmlFor="form_subject">Subject *</label>
             <div className="valid-feedback"> Looks good! </div>
-            <div className="invalid-feedback"> Please select a department. </div>
+            <div className="invalid-feedback"> Please enter a subject. </div>
           </div>
         </div>
 
