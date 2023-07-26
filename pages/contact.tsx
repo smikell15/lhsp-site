@@ -118,9 +118,6 @@ const Contact: NextPage = () => {
           </div>
         </div>
       </main>
-
-      {/* ========== footer section ========== */}
-      <Footer8 />
     </Fragment>
   );
 };
