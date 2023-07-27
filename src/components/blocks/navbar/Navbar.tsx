@@ -81,6 +81,11 @@ const Navbar: FC<NavbarProps> = (props) => {
             <li className="nav-item">
               <NextLink href="/contact" title="Contact" className="nav-link" />
             </li>
+
+          {/* ===================== calendar nav item ===================== */}
+          <li className="nav-item">
+              <NextLink href="/calendar" title="Calendar" className="nav-link" />
+            </li>
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
@@ -107,32 +112,6 @@ const Navbar: FC<NavbarProps> = (props) => {
             <li className="nav-item">
               <a className="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info">
                 <i className="uil uil-info-circle" />
-              </a>
-            </li>
-          )}
-
-          {/* ============= search icon button ============= */}
-          {search && (
-            <li className="nav-item">
-              <a className="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
-                <i className="uil uil-search" />
-              </a>
-            </li>
-          )}
-
-          {/* ============= contact button ============= */}
-          {button && <li className="nav-item d-none d-md-block">{button}</li>}
-
-          {/* ============= shopping cart button ============= */}
-          {cart && (
-            <li className="nav-item">
-              <a
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvas-cart"
-                className="nav-link position-relative d-flex flex-row align-items-center"
-              >
-                <i className="uil uil-shopping-cart" />
-                <span className="badge badge-cart bg-primary">3</span>
               </a>
             </li>
           )}
