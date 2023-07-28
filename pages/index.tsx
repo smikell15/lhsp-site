@@ -17,21 +17,9 @@ const Home: NextPage = () => {
       </header>
 
       {/* ========== main content ========== */}
-      <main className="content-wrapper">
+      <main className="content-wrapper bg-gray">
         {/* ========== hero section ========== */}
         <Hero17 />
-
-        <section className="wrapper bg-gray">
-          <div className="container">
-            <div className="card shadow-none">
-              <div className="card-body px-lg-11 px-xl-13">
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <Reel />
-              </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </Fragment>
   );

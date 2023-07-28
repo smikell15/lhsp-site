@@ -2,14 +2,8 @@ import { NextPage } from 'next';
 import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import ContactForm from 'components/common/ContactForm';
-// -------- data -------- //
-const breadcrumb = [
-  { id: 1, title: 'Home', url: '/' },
-  { id: 2, title: 'Contact', url: '#' }
-];
 
 const Contact: NextPage = () => {
   return (
@@ -21,7 +15,7 @@ const Contact: NextPage = () => {
         <Navbar social fancy navClassName="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none" />
       </header>
 
-      <main className="content-wrapper">
+      <main className="content-wrapper bg-gray">
         {/* ========== page title section ========== */}
         <section className="wrapper image-wrapper text-dark">
           <div className="container pt-10 pb-19 pt-md-9 pb-md-20 text-center">
@@ -33,7 +27,7 @@ const Contact: NextPage = () => {
           </div>
         </section>
 
-        <div className="wrapper bg-light angled upper-end">
+        <div className="wrapper bg-gray angled upper-end">
           <div className="container pb-11">
             {/* ========== contact info section ========== */}
             <div className="row mb-14 mb-md-16">
