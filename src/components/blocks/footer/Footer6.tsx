@@ -7,7 +7,7 @@ import footerNav from 'data/footer';
 
 const Footer6: FC = () => {
   return (
-    <footer className="bg-dark text-inverse mt-5 mt-md-16">
+    <footer className="bg-dark text-inverse">
       <div className="container py-13 py-md-15">
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
@@ -15,7 +15,7 @@ const Footer6: FC = () => {
               <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
 
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © 2022-23 Lindy Hop Saint Pete. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -26,9 +26,9 @@ const Footer6: FC = () => {
           <div className="col-md-4 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <NextLink title="info@email.com" href="mailto:#" />
-              <br /> 00 (123) 456 78 90
+              <address className="pe-xl-12 pe-xxl-14">4646 Central Ave.<br />St. Petersburg, FL, 33711</address>
+              <NextLink title="lindyhop.saintpete@gmail.com" href="mailto:lindyhop.saintpete@gmail.com" />
+              <br /> (863) 255-8220
             </div>
           </div>
 
@@ -47,8 +47,8 @@ const Footer6: FC = () => {
 
           <div className="col-md-12 col-lg-3">
             <div className="widget">
-              <h4 className="widget-title text-white mb-3">Our Newsletter</h4>
-              <p className="mb-5">Subscribe to our newsletter to get our news &amp; deals delivered to you.</p>
+              <h4 className="widget-title text-white mb-3">Email Alerts</h4>
+              <p className="mb-5">Subscribe to our mailing list to get our news delivered to you.</p>
 
               <div className="newsletter-wrapper">
                 <div id="mc_embed_signup2">

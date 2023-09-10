@@ -2,14 +2,10 @@ import { NextPage } from 'next';
 import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Navbar } from 'components/blocks/navbar';
-import { Footer8 } from 'components/blocks/footer';
+import { FAQ1 } from 'components/blocks/faq';
+import { Footer6 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 import ContactForm from 'components/common/ContactForm';
-// -------- data -------- //
-const breadcrumb = [
-  { id: 1, title: 'Home', url: '/' },
-  { id: 2, title: 'Contact', url: '#' }
-];
 
 const Contact: NextPage = () => {
   return (
@@ -27,7 +23,10 @@ const Contact: NextPage = () => {
           <div className="container pt-10 pb-19 pt-md-9 pb-md-20 text-center">
             <div className="row">
               <div className="col-lg-8 mx-auto">
-              <h2 className="display-4 mb-3 text-center">Get In Touch</h2>
+              <h2 className="display-4 mb-3 text-center">About Us</h2>
+              <p className="lead text-center">
+                  Our weekly & monthly events happen here:
+                </p>
               </div>
             </div>
           </div>
@@ -104,12 +103,18 @@ const Contact: NextPage = () => {
               </div>
             </div>
 
+            {/* ========== faq section ========== */}
+            <div className="row">
+              <h2 className="display-4 mb-5 text-center">Frequently Asked</h2>
+              <FAQ1 />
+            </div>
+
             {/* ========== contact form section ========== */}
             <div className="row">
               <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                 <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>
                 <p className="lead text-center mb-10">
-                  Reach out to us via our contact form and we will get back to you shortly.
+                  Couldn't find and answer in the FAQ?<br />Reach out to us via our contact form and we will get back to you shortly.
                 </p>
 
                 <ContactForm />
@@ -118,6 +123,7 @@ const Contact: NextPage = () => {
           </div>
         </div>
       </main>
+      <Footer6 />
     </Fragment>
   );
 };

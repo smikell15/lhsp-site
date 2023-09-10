@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Hero17 } from 'components/blocks/hero';
 import { Navbar } from 'components/blocks/navbar';
-import { Reel } from 'components/blocks/reel';
+import { Footer6 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
 
 const Home: NextPage = () => {
@@ -20,19 +20,8 @@ const Home: NextPage = () => {
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
         <Hero17 />
-
-        <section className="wrapper bg-gray">
-          <div className="container">
-            <div className="card shadow-none">
-              <div className="card-body px-lg-11 px-xl-13">
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <Reel />
-              </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
+      <Footer6/>
     </Fragment>
   );
 };

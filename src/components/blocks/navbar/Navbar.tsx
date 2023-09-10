@@ -77,9 +77,13 @@ const Navbar: FC<NavbarProps> = (props) => {
             <li className="nav-item">
               <NextLink href="/" title="Home" className="nav-link" />
             </li>
+            {/* ===================== home nav item ===================== */}
+            <li className="nav-item">
+              <NextLink href="/events" title="Events" className="nav-link" />
+            </li>
             {/* ===================== contact nav item ===================== */}
             <li className="nav-item">
-              <NextLink href="/contact" title="Contact" className="nav-link" />
+              <NextLink href="/contact" title="About" className="nav-link" />
             </li>
           </ul>
 
