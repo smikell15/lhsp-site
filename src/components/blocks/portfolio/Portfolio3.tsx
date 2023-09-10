@@ -11,9 +11,9 @@ const Portfolio3: FC = () => {
       <div className="container pt-12 pt-lg-7 pb-14 pb-md-16">
         <div className="row">
           <div className="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
-            <h2 className="fs-16 text-uppercase text-primary mb-3">Latest Projects</h2>
-            <h3 className="display-3 mb-10">
-              Check out some of our awesome projects with creative ideas and great design.
+            <h2 className="fs-16 text-uppercase text-primary mb-3">Events</h2>
+            <h3 className="display-5 mb-10">
+              Check out some of our upcoming events:
             </h3>
           </div>
         </div>
@@ -23,13 +23,13 @@ const Portfolio3: FC = () => {
             grabCursor
             slidesPerView={2}
             pagination={false}
-            className="overflow-visible"
+            className="overflow-hidden"
             breakpoints={{ 768: { slidesPerView: 2 }, 0: { slidesPerView: 1 } }}
           >
             {portfolioList2.map(({ id, url, image, category, title }) => (
               <Fragment key={id}>
                 <figure className="rounded mb-7">
-                  <img src={image['1x']} srcSet={image['2x']} alt="" />
+                  <img src={image['1x']} srcSet={image['2x']} alt={image['altText']} />
                 </figure>
 
                 <div className="project-details d-flex justify-content-center flex-column">

@@ -13,45 +13,17 @@ export const portfolioList1 = [
 export const portfolioList2 = [
   {
     id: 0,
-    url: '#',
-    category: 'Mobile Design',
-    title: 'Cras Fermentum Sem',
-    image: { '1x': '/img/photos/sp1.jpg', '2x': '/img/photos/sp1@2x.jpg 2x' }
+    url: 'https://www.facebook.com/LindyHop.SaintPete/events',
+    category: 'Tuesdays',
+    title: 'Lindy Hop Community Practice',
+    image: { '1x': '/img/photos/comm1.jpg', '2x': '/img/photos/comm1.jpg', 'altText': '' }
   },
   {
     id: 1,
-    url: '#',
-    category: 'Web Design',
-    title: 'Venenatis Euismod Vehicula',
-    image: { '1x': '/img/photos/sp2.jpg', '2x': '/img/photos/sp2@2x.jpg 2x' }
-  },
-  {
-    id: 2,
-    url: '#',
-    category: 'Stationary',
-    title: 'Tortor Tellus Cursus',
-    image: { '1x': '/img/photos/sp3.jpg', '2x': '/img/photos/sp3@2x.jpg 2x' }
-  },
-  {
-    id: 3,
-    url: '#',
-    category: 'Web Application',
-    title: 'Ridiculus Sem Parturient',
-    image: { '1x': '/img/photos/sp4.jpg', '2x': '/img/photos/sp4@2x.jpg 2x' }
-  },
-  {
-    id: 4,
-    url: '#',
-    category: 'Web Design',
-    title: 'Cursus Sollicitudin Adipiscing',
-    image: { '1x': '/img/photos/sp5.jpg', '2x': '/img/photos/sp5@2x.jpg 2x' }
-  },
-  {
-    id: 5,
-    url: '#',
-    category: 'Stationary',
-    title: 'Fringilla Quam Vulputate',
-    image: { '1x': '/img/photos/sp6.jpg', '2x': '/img/photos/sp6@2x.jpg 2x' }
+    url: 'https://www.facebook.com/events/122766827583942',
+    category: 'October 3 - Alpha Rhythm Kings',
+    title: 'Live Jazz Social Dance',
+    image: { '1x': '/img/photos/live10-3.jpg', '2x': '/img/photos/live10-3.jpg', 'altText': '' }
   }
 ];
 
@@ -103,19 +75,13 @@ export const portfolioList3 = [
 
 // used in the portfolio-5 block
 export const portfolioList4 = [
-  { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'drinks events' },
-  { id: 2, image: 'pf2', title: 'Ridiculus Parturient', category: 'events' },
-  { id: 3, image: 'pf3', title: 'Ornare Ipsum', category: 'pastries events' },
-  { id: 4, image: 'pf4', title: 'Nullam Mollis', category: 'events' },
-  { id: 5, image: 'pf5', title: 'Euismod Risus', category: 'pastries events' },
-  { id: 6, image: 'pf6', title: 'Ridiculus Tristique', category: 'foods' },
-  { id: 7, image: 'pf7', title: 'Sollicitudin Pharetra', category: 'foods drinks' },
-  { id: 8, image: 'pf8', title: 'Tristique Venenatis', category: 'pastries' },
-  { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'events' },
-  { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'foods' },
-  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'drinks' },
-  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'foods' },
-  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'drinks' }
+  { id: 1, image: '0001', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
+  { id: 2, image: '0002', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
+  { id: 3, image: '0003', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
+  { id: 4, image: '0004', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
+  { id: 5, image: '0021', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
+  { id: 6, image: '0032', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
+  { id: 7, image: '0037', title: 'Manhattan Casino - 9/20/2022', category: 'live' },
 ];
 
 // used in the portfolio-8 block
