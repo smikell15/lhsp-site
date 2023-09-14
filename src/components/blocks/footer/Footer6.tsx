@@ -58,13 +58,15 @@ const Footer6: FC = () => {
                     className="validate dark-fields"
                     id="mc-embedded-subscribe-form2"
                     name="mc-embedded-subscribe-form"
-                    action="#"
+                    action="https://lindy-hop-saint-pete.us21.list-manage.com/subscribe/post"
                   >
+                    <input type="hidden" name="u" value="2cbb07408a581ee59215c4f8e"/>
+                    <input type="hidden" name="id" value="3eb70a24ec"/>
                     <div id="mc_embed_signup_scroll2">
                       <div className="mc-field-group input-group form-floating">
                         <input
                           type="email"
-                          name="EMAIL"
+                          name="MERGE0"
                           id="mce-EMAIL2"
                           placeholder="Email Address"
                           className="required email form-control"
